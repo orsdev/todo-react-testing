@@ -1,8 +1,8 @@
-import Banner from './components/Banner/Banner'
 import { Switch, Route } from 'react-router-dom'
+import Banner from './components/Banner/Banner'
 import TodoPage from './pages/TodoPage/TodoPage'
 import FollowersPage from './pages/FollowersPage/FollowersPage'
-import './App.css';
+import './App.css'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route strict exact path="/followers" component={FollowersPage} />
       </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
