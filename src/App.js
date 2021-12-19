@@ -6,7 +6,13 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        width: '80%',
+        margin: 'auto'
+      }}
+    >
       <Banner />
       <Switch>
         <Route strict exact path="/" component={TodoPage} />

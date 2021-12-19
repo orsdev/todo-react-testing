@@ -28,8 +28,9 @@ function TodoList({ todos, setTodos }) {
     <div className="todolist-container">
       <div className="todos-container">
         <div>
-          {todos.map((todo) => (
+          {todos.map((todo, index) => (
             <div
+              key={index.toString()}
               className={`todo-item ${todo.completed && 'todo-item-active'}`}
               onClick={() => updateTask(todo.id)}
               role="button"
